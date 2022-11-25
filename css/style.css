@@ -1,1 +1,87 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+body main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+body main .container {
+  height: 600px;
+  width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+body main .jeremy,
+body main .work,
+body main .play,
+body main .study,
+body main .exercise,
+body main .social,
+body main .selfcare {
+  border-radius: 20px;
+}
+body main .jeremy {
+  background-color: red;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+body main .jeremy .foto {
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+}
+body main .jeremy .time {
+  background-color: rgb(21, 25, 75);
+  height: 400px;
+}
+body main .work {
+  background-color: pink;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body main .play {
+  background-color: blue;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body main .study {
+  background-color: yellow;
+  grid-column: 3/3;
+  grid-row: 2/3;
+}
+body main .exercise {
+  background-color: orange;
+  grid-column: 3/3;
+  grid-row: 1/2;
+}
+body main .social {
+  background-color: purple;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+body main .selfcare {
+  background-color: green;
+  grid-column: 4/5;
+  grid-row: 2/2;
+}
+body main .weekDay, body main .mothDay {
+  display: hidden;
+}/*# sourceMappingURL=style.css.map */

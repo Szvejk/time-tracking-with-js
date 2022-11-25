@@ -1,102 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<link rel="stylesheet" href="./css/style.css">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
 
+		<link rel="stylesheet" href="./css/style.css" />
 
-</head>
-<body>
-<main> 
+		<title>Frontend Mentor | Time tracking dashboard</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<section class="jeremy all">
+					<img class="foto" src="./images/image-jeremy.png" alt="" />
 
-  <section class="jeremy"> 
-<div class="foto">
-   <img src="./images/image-jeremy.png" alt="">
-   
-    <div class="profile"> 
-  Report for
-  Jeremy Robson
-</div>
+					<div class="profile">
+						<p class="report">Report for</p>
+						<div class="name">Jeremy</div>
+						<div class="surname">Robson</div>
+					</div>
 
- <div class="time"> 
-  Daily
-  Weekly
-  Monthly
-  </div>
-</section>
+					<div class="time">
+						<button class="day">Daily</button>
+						<button class="week">Weekly</button>
+						<button class="month">Monthly</button>
+					</div>
+				</section>
 
-<section class="work"> 
-  <div class="color1"></div>
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-</section>
+				<section class="work all">
+					<div class="days">
+						<p class="dailywork">Work</p>
+						<p class="dailyhours hidden">5hrs</p>
+						<!-- daily -->
+						<p class="previousdaily hidden">Previous - 7hrs</p>
+					</div>
+					<div class="weekday">
+						<p class="weeklyhours hidden">32hrs</p>
+						<p class="previousweekly hidden">Previous - 36hrs</p>
+					</div>
 
-<section class="play"> 
-  <div class="color2"></div>
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly --> 
+					<div class="mothday">
+						<p class="monthlyhours hidden">132hrs</p>
+						<p class="previousmonthly hidden">Previous - 136hrs</p>
+					</div>
+				</section>
 
-</section>
-<section class="study"> 
-  <div class="color3"></div>
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-</section>
-<section class="exercise"> 
+				<section class="play all">
+					<div class="days">
+						<p class="dailyplay">Play</p>
+						<p class="dailyhours hidden">1hrs</p>
+						<p class="previousdaily hidden">Previous - 5hrs</p>
+					</div>
+					<div class="weekday">
+						<p class="weeklyhours hidden">12hrs</p>
+						<p class="previousweekly hidden">Previous - 8hrs</p>
+					</div>
 
-  <div class="color4"></div>
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-</section>
+					<div class="mothday">
+						<p class="monthlyhours hidden">132hrs</p>
+						<p class="previousmonthly hidden">Previous - 136hrs</p>
+					</div>
+				</section>
 
-<section class="social"> 
-  <div class="color5"></div>
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-</section>
+				<section class="study all">
+					<div class="days">
+						<p class="dailystudy">Study</p>
+						<p class="dailyhours hidden">5hrs</p>
+						<p class="previousdaily hidden">Previous - 6hrs</p>
+					</div>
+					<div class="weekday">
+						<p class="weeklyhours hidden">4hrs</p>
+						<p class="previousweekly hidden">Previous - 8hrs</p>
+					</div>
+					<div class="month">
+						<p class="monthlyhours hidden">137hrs</p>
+						<p class="previousmonthly hidden">Previous - 136hrs</p>
+					</div>
+				</section>
 
-<section class="selfcare"> 
-  <div class="color6"></div>
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-</section>
-  
-<script src="./script.js"></script>
-</main>
-</body>
+				<section class="exercise">
+					<div class="days">
+						<p class="dailystudy">Exercise</p>
+						<p class="dailyhours hidden">1hrs</p>
+						<p class="previousdaily hidden">Previous - 6hrs</p>
+					</div>
+					<div class="weekday">
+						<p class="weeklyhours hidden">4hrs</p>
+						<p class="previousweekly hidden">Previous - 8hrs</p>
+					</div>
+					<div class="month">
+						<p class="monthlyhours hidden">137hrs</p>
+						<p class="previousmonthly hidden">Previous - 136hrs</p>
+					</div>
+				</section>
+
+				<section class="social">
+					<div class="days">
+						<p class="dailysocial">Social</p>
+						<p class="dailyhours hidden">4hrs</p>
+						<p class="previousdaily hidden">Previous - 4hrs</p>
+					</div>
+					<div class="weekday">
+						<p class="weeklyhours hidden">4hrs</p>
+						<p class="previousweekly hidden">Previous - 8hrs</p>
+					</div>
+					<div class="month">
+						<p class="monthlyhours hidden">137hrs</p>
+						<p class="previousmonthly hidden">Previous - 136hrs</p>
+					</div>
+				</section>
+
+				<section class="selfcare">
+					<div class="days">
+						<p class="dailysocial">Self Care</p>
+						<p class="dailyhours hidden">0hrs</p>
+						<p class="previousdaily hidden">Previous - 6hrs</p>
+					</div>
+
+					<div class="weekday">
+						<p class="weeklyhours hidden">4hrs</p>
+						<p class="previousweekly hidden">Previous - 8hrs</p>
+					</div>
+					<div class="month">
+						<p class="monthlyhours hidden">137hrs</p>
+						<p class="previousmonthly hidden">Previous - 136hrs</p>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
 </html>
