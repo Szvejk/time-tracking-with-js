@@ -75,8 +75,8 @@ body {
 			grid-row: 2/2;
 		}
 
-		.weekDay, .mothDay{
-			display: hidden;
+		.hidden {
+			display: none;
 		}
 	}
 }
