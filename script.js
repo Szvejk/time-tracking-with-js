@@ -1,23 +1,34 @@
-const firstButton = document.querySelector('.day');
-const secondButton = document.querySelector('.week');
-const thirdButton = document.querySelector('.month');
-const weekDay = document.querySelector('.weekday');
-const mothDay = document.querySelector('.mothday');
-const days = document.querySelector('.days');
+const firstButton = document.querySelectorAll('.day');
+const secondButton = document.querySelectorAll('.week');
+const thirdButton = document.querySelectorAll('.month');
+const weekDay = document.querySelectorAll('.weekday');
+const mothDay = document.querySelectorAll('.mothday');
+const days = document.querySelectorAll('.days');
+
+
+Array.from(document.querySelectorAll(day))
+Array.from(document.querySelectorAll(week))
+Array.from(document.querySelectorAll(month))
+Array.from(document.querySelectorAll(weekday))
+Array.from(document.querySelectorAll(mothday))
+Array.from(document.querySelectorAll(days))
+
 
 firstButton.addEventListener('click', () => {
-	days.classList.remove('hidden');
-	mothDay.style.display = 'none';
-	weekDay.style.display = 'none';
+	days.forEach(e => {
+		days.classList.remove('hidden')
+	})
 });
 
-secondButton.addEventListener = document.querySelector('click', () => {
-	weekDay.classList.remove('hidden');
-	mothDay.style.display = 'none';
-	days.style.display = 'none'
+secondButton.addEventListener ('click', () => {
+weekDay.forEach(e => {
+	weekDay.classList.remove('hidden')
+})
 });
-thirdButton.addEventListener = document.querySelector('click', () => {
-	mothDay.classList.remove('hidden')
-	days.style.display = 'none';
-	weekDay.style.display = 'none'
+
+thirdButton.addEventListener ('click', () => {
+mothDay.forEach(e => {
+mothDay.classList.remove('hidden')
+
+})
 })
